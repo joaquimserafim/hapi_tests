@@ -1,0 +1,27 @@
+{
+  "name": "test_1000",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/tape/bin/tape *.js",
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore .",
+    "codestyle": "jscs -p google ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.1.0",
+    "hapi": "^7.0.0"
+  },
+  "devDependencies": {
+    "pre-commit": "0.0.9",
+    "supertest": "^0.14.0",
+    "tape": "^3.0.1"
+  },
+  "pre-commit": [
+    "jshint",
+    "codestyle",
+    "test"
+  ]
+}
