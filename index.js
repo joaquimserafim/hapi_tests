@@ -1,3 +1,5 @@
+'use strict';
+
 var Hapi    = require('hapi');
 var debug   = require('debug')('server');
 
